@@ -1,0 +1,51 @@
+<div class="container mt-3">
+  <div class="row ">
+    <div class="col-md-8 border border-1">
+      <h3 class="mt-3">Employee Table</h3>
+      <div>
+        <div>
+          <form class="d-flex">
+            <input class="form-control me-2" [(ngModel)]="term" name="term" type="search" placeholder="Search Employee"
+              aria-label="Search">
+          </form>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <!-- <th scope="col">Employee_id</th> -->
+              <th scope="col">Name</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees | filter:term">
+              <!-- <td>{{employee.id}}</td> -->
+              <td scope="row">{{employee.employee_name}}</td>
+              <td>{{employee.employee_salary}}</td>
+              <td>{{employee.employee_age}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+</div>
+      <div class="col-md-4 border border-1">
+
+        <h3 class="mt-3">Add Employee Details</h3>
+
+        <form id="employeeform" #employeesForm="ngForm" (ngSubmit)="getEmployeeData(employeesForm.value)">
+
+          <input type="number" ngModel name="id" hidden>
+
+          <input type="text" ngModel name="employee_name" placeholder="Enter Name">
+
+          <input type="number" ngModel name="employee_salary" placeholder="Enter Salary">
+
+          <input type="number" ngModel name="employee_age" placeholder="Enter Age">
+
+          <button class="btn mt-1 btn-primary">Add new employee</button>
+        </form>
+      </div>
+    </div>
+  </div>

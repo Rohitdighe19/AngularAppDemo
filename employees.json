@@ -1,0 +1,47 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "employee_name": "Tiger Nixon",
+      "employee_salary": "320800",
+      "employee_age": "61",
+      "profile_image": ""
+    },
+    {
+      "id": "2",
+      "employee_name": "Rohit Dighe",
+      "employee_salary": "250800",
+      "employee_age": "23",
+      "profile_image": ""
+    },
+    {
+      "id": "3",
+      "employee_name": "Sagar Vyavahare",
+      "employee_salary": "20800",
+      "employee_age": "30",
+      "profile_image": ""
+    },
+    {
+      "id": "4",
+      "employee_name": "Prasad Dumbre",
+      "employee_salary": "30800",
+      "employee_age": "58",
+      "profile_image": ""
+    },
+    {
+      "id": "5",
+      "employee_name": "Kiran Ghuge",
+      "employee_salary": "320800",
+      "employee_age": "28",
+      "profile_image": ""
+    },
+    {
+      "id": "6",
+      "employee_name": "Anil Patil",
+      "employee_salary": "390800",
+      "employee_age": "50",
+      "profile_image": ""
+    }
+ 
+  ]
+}
